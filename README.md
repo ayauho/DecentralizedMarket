@@ -9,4 +9,4 @@ Functinality:
 + put buy/sell limit orders
 + perform market orders
 
-Dependency: Docker, ethereum/solc:0.8.3
+Dependency: PHP 7+, Docker, ethereum/solc:0.8.3
