@@ -1,0 +1,124 @@
+body * {
+  display: block;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+veil{z-index: 99999;background: white; position: absolute;top: 0;left: 0;width: 100%;height: 100%;opacity: 0.9;background: white;display: flex;justify-content: center;align-items: center;flex-direction: column;}
+veil cntr{width: 100%;display: flex;justify-content: center !important;align-items: center !important;}
+veil t{display: inline-block;font-weight: bold;}
+veil confirm{margin: 0 auto;margin-top: 5px;padding: 5px 10px;border: 2px solid black;border-radius: 10px;cursor: pointer;cursor: hand;}
+close {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+veil wait{width: 20px;height: 20px;background-image:url(/images/ajax-loader-tiny.gif);background-repeat:no-repeat;background-size:300%;background-position:center;margin:5px;}
+.tabs > li.active{font-weight: bold;}
+max{cursor: pointer;cursor: hand;}
+top-pane{width:100%;display: flex;justify-content: space-between;}
+top-pane > *{width: 33%;}
+top-pane button{width: fit-content;}
+top-pane right amount{margin-right: 5px}
+top-pane right{display: flex;flex-direction: column;align-items: flex-end;cursor: pointer;cursor: hand;}
+top-pane center{display: flex;font-size: 40px;justify-content: center;align-items: center;}
+top-pane center changed{margin-left: 10px;}
+top-pane changed.positive{color: green;}
+top-pane changed.negative{color: red;}
+cover{display: flex;justify-content: center;align-items: center;flex-direction: column;}
+cover > cntr{width: 500px; height: 400px;background: white;border-radius: 15px;box-shadow: 3px 0 0 black;}
+cover .content{height: calc(100% - 41px)}
+cover > tip{margin: 10px 15px;background: #FED7D5;padding: 5px 10px;border-radius: 10px;}
+account{display: flex;flex-direction: column;justify-content: center;align-items: center;}
+account dtls{margin: 10px;display: flex;flex-direction: column;justify-content: center;align-items: center;}
+account dtls > *{margin: 10px;}
+account tip{max-width: 200px;border: 1px solid lightgrey;border-radius: 10px;background: #FCEFE1;padding: 15px;}
+account tip.warning{background: #FED7D5;}
+account input[type=password]{font-weight: bold;}
+account my-account-cntr{margin: 10px;text-align: center;}
+account my-account-cntr cap{font-weight: bold;}
+account my-assets-cntr{display: flex;justify-content: space-between;background: #E2F8D4;border-radius: 10px;padding: 5px 10px;margin-top: 10px;}
+account my-assets-cntr cntr{display: flex;}
+account my-assets-cntr cap{font-weight: bold;margin-left: 10px;}
+account my-assets-cntr amount{margin-left: 5px;}
+.content item{position: relative;width: 100%;display: flex;align-items: center;justify-content: space-between;}
+.content item cntr{display: flex;align-items: center;justify-content: space-between;}
+.content item cntr > *{margin: 5px;}
+.content item input[type=text]{width: 100px;text-align: right;}
+.content item logo{width: 50px;height: 50px;margin: 10px;background-size: contain;}
+.content item name{margin-right: auto;}
+button{display: flex !important;align-items: center;}
+trading-area{width: 100%;max-width: 500px;margin: 0 auto;}
+#buy-sell #buy.active, buy.content{background: #94D98D !important;}
+#buy-sell #sell.active, sell.content{background: #FF8D8D !important;}
+#buy-sell #buy{background: #F3FAF2 !important;}
+#buy-sell #sell{background: #FFF2F2 !important;}
+#buy-sell, #market-limit, #book {display: flex;justify-content: center;}
+trading-area tools{position: relative;}
+trading-area buttons{display: flex;}
+trading-area > .content{border-radius: 15px;padding: 10px;}
+offers-cntr {margin-top: 10px;}
+offers-cntr > cap{text-align: center;padding: 10px;border-width: 2px;border-left-width: 0;border-right-width: 0;border-style: solid;font-size: 18px;}
+offers offer{position: relative;display: flex;align-items: center;justify-content: space-around; padding: 10px;}
+offers price-cntr{width: fit-content;}
+offers price-cntr cnt{display: flex;}
+offers for-cntr, offers for-cntr > *{display: flex;}
+offers for-cntr{justify-content: center;}
+offers for{margin: 0 5px;}
+buy #market-limit li.active, buy tools{background: #CFEDCC !important;}
+sell #market-limit li.active, sell tools{background: #FFE2E2 !important;}
+buy #market-limit li{background: #F3FAF2 !important;}
+sell #market-limit li{background: #FFF2F2 !important;}
+tools{display: flex;flex-direction: column; justify-content: center;align-items: center;padding-top: 10px;border-radius: 15px;}
+tools [type=text]{border-width: 0;font-size: 18px;height: 18px;}
+tools .cntr{width: fit-content; border: 1px solid black;margin: 10px;border-radius: 10px;padding: 5px 8px;background: white;}
+tools price-cntr{margin-bottom: 0 !important;}
+tools #price{width: 70px;}
+tools #amount{width: 120px;}
+tools button{margin: 10px 0 20px; border: 2px solid black;border-radius: 15px;padding: 8px 13px;font-size: 18px;cursor: pointer;cursor: hand;}
+tools veil{border-radius: 15px;padding: 10px;}
+sell tools button{background: #FFE2E2;}
+buy tools button{background: #CFEDCC;}
+sell tools button:hover{background: #FF8D8D;}
+buy tools button:hover{background: #94D98D;}
+book-cntr{margin-top: 10px;}
+book-cntr > .content{border-radius: 15px;}
+buy #offers.active, buy offers {background: #FFE2E2 !important;}
+sell #offers.active, sell offers {background: #CFEDCC !important;}
+buy #offers{background: #FFF7F7 !important;}
+sell #offers{background: #FCFDFB !important;}
+offers offer:not(:nth-of-type(1)){border-top: 2px solid white;}
+offers offer:nth-of-type(1){border-top-left-radius: 15px;border-top-right-radius: 15px;}
+offers offer:nth-last-of-type(1){border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;}
+offers offer{cursor: pointer;cursor: hand;}
+offers offer price, offers offer sum{font-weight: bold;margin-right: 5px;}
+buy offers offer:hover{background: #FFF2F2;}
+events{background: white;border-radius: 15px;}
+.event:not(:nth-of-type(1)){border-top: 2px solid lightgrey;}
+.event:nth-of-type(1), .event:nth-of-type(1) veil{border-top-left-radius: 15px;border-top-right-radius: 15px;}
+.event:nth-last-of-type(1), .event:nth-last-of-type(1) veil{border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;}
+.event{display: flex;justify-content: flex-start;align-items: center;padding: 10px;}
+.event date{color: grey;margin-right: 10px;width: fit-content;}
+.event > text{margin-right: auto;width: 100%;}
+.event t{font-weight: bold;display: inline-block;}
+.event.buy{background: #F3FAF2;}
+.event.sell{background: #FFF2F2;}
+my-order{position: relative;}
+my-order close{width: 20px;height: 20px;font-size: 20px;}
+#cancel-order{width: 60px;margin-right: 10px;margin-left: 5px;}
+#personal-area expand{align-items: center;font-size: 20px;border: 0px solid #DDD;border-top-width: 2px;border-bottom-width: 2px;}
+#personal-area expand cap{margin-left: 10px;}
+#personal-area expand row{display: flex;align-items: center;justify-content: flex-start;font-size: 18px;padding: 10px;}
+#personal-area expand row:not(:nth-of-type(1)){border-top: 1px solid #EEE}
+#personal-area expand row > *{margin: 0 5px;}
+#personal-area expand row date{color: grey;}
+@media screen and (max-width: 640px) {
+	cover cntr{width: 100%;height: 100%;border-radius: 0;}	
+}
